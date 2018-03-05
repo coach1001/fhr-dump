@@ -1,0 +1,21 @@
+{
+  "name": "survey",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "general": {
+      "type": "object",
+      "required": true
+    },
+    "governance": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

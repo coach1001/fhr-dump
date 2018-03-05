@@ -1,0 +1,1032 @@
+{
+  "data": [
+    {
+      "_id": "5a143548059bb21a484b1f86",
+      "general": {
+        "date_of_interview": "2017-06-06T00:00:00.000Z",
+        "persons_interviewed": [
+          {
+            "board_member": false,
+            "name": "Mary Selone",
+            "position": "Project Coordinator",
+            "_id": "5a143548059bb21a484b1f8c"
+          },
+          {
+            "board_member": false,
+            "name": "Daniel Mametja",
+            "position": "Paralegal",
+            "_id": "5a143548059bb21a484b1f8b"
+          },
+          {
+            "board_member": true,
+            "name": "Betty Mokoena",
+            "position": "Vice Treasurer",
+            "_id": "5a143548059bb21a484b1f8a"
+          }
+        ],
+        "researchers": [
+          {
+            "fhr_staff_member": true,
+            "name": "Leonard Baloyi",
+            "organisation": "",
+            "_id": "5a143548059bb21a484b1f89"
+          },
+          {
+            "fhr_staff_member": true,
+            "name": "Lindi Mabena",
+            "_id": "5a143548059bb21a484b1f88"
+          }
+        ],
+        "images": [
+          {
+            "_id": "5a1531f38b35fe05627caa33",
+            "featured": true,
+            "url": "http://gpr.fhr.org.za:3005/file?fileId=55"
+          }
+        ],
+        "name": "Bloodriver Advice Office",
+        "address": "Bloodriver village, New Era Drive, Stand No 25, next to Mulaudzi Secondary School.",
+        "gps_coordinates": "-23.820343, 29.368238",
+        "_id": "5a143548059bb21a484b1f87"
+      },
+      "story_of_significant_change": [
+        {
+          "_id": "5a1570a28b35fe05627cc7bd",
+          "how_long_have_you_been_a_client_of_this_cao": "4 months. ",
+          "what_do_you_think_is_important_about_the_work_that_the_cao_does_for_your_community": "She said it is the place of hope restoration and the CAO plays a very important role within the community in resolving family matters that causes tensions between family members. ",
+          "what_are_the_important_changes_that_have_occurred_in_your_life_from_the_assistance_you_have_received_from_the_cao": "Although the case is currently with probono lawyers, the beneficiary was happy with the way the CAO handled and refer her case to experts, because the issue that brought her to the CAO was partially resolve prior probono Lawyer taking over. \n\nIn briefly, the beneficiary was having problem with her husband who owned a house in Gauteng at Tembisa which they use to share ages ago. Now that they have divorced, the husband is renting the house and does not share the money he receive from tenants and no longer support her and her children who relocated to Limpopo (Makgofe). What the CAO assisted her with was to mediate and talk to defiant husband to pay monthly maintenance, which he is still paying. Since the intervention of CAO, the husband is partially able to share tenants’ fees. \n",
+          "have_you_experienced_any_challenges_in_receiving_assistance_from_this_cao": "She indicated her satisfactory without any challenges. "
+        }
+      ],
+      "__v": 0,
+      "governance": {
+        "legal_status": {
+          "professional_body": [
+            "ACAOSA"
+          ],
+          "legal_status": "Non Profit",
+          "npo_registration_number": "016-733",
+          "npo_date_of_registration": "2017-11-22T08:14:43.785Z",
+          "_id": "5a1531f38b35fe05627caa2c"
+        },
+        "tax_status": {
+          "status": "Tax Registered",
+          "number": 9001973222,
+          "_id": "5a1531f38b35fe05627caa2d"
+        },
+        "governance_structure": {
+          "board_member_tor": {
+            "tor_exists": null,
+            "provided_copy_of_constitution": true,
+            "notes": "Notes: CAO doesn’t have ToR for the board members. "
+          },
+          "appointment_procedure_for_board_members": {
+            "procedure_exists": false,
+            "notes": "Notes: the CAO’s appointment procedure is verbally known, we were advised that they appoint or reappoint board members every three years. "
+          },
+          "board_members_remunerated": {
+            "renumerated": false,
+            "amount": null
+          },
+          "composition_of_board": [
+            {
+              "sex": "Male",
+              "age_of_member": "Adult",
+              "_id": "5a1561e18b35fe05627cc375",
+              "name": "Chairperson",
+              "role_on_board": "Chairperson",
+              "years_on_board": 4,
+              "background_of_member": "HR manager at Premier’s Office"
+            },
+            {
+              "sex": "Female",
+              "age_of_member": "Adult",
+              "_id": "5a1561e18b35fe05627cc374",
+              "name": "Treasurer",
+              "role_on_board": "Treasurer",
+              "years_on_board": 4,
+              "background_of_member": "BSc. Agricultural Sciences"
+            },
+            {
+              "sex": "Female",
+              "age_of_member": "Adult",
+              "_id": "5a1561e18b35fe05627cc373",
+              "name": "Vice Treasurer",
+              "role_on_board": "Vice Treasurer",
+              "years_on_board": 4,
+              "background_of_member": "Grade 12"
+            },
+            {
+              "sex": "Male",
+              "age_of_member": "Adult",
+              "_id": "5a1561e18b35fe05627cc372",
+              "name": "Secretary",
+              "role_on_board": "Secretary",
+              "years_on_board": 4,
+              "background_of_member": "South African Police Officer"
+            },
+            {
+              "sex": "Male",
+              "age_of_member": "Adult",
+              "_id": "5a1561e18b35fe05627cc371",
+              "name": "Additional Member",
+              "role_on_board": "Additional Member",
+              "years_on_board": 4,
+              "background_of_member": "Pastor"
+            }
+          ],
+          "management_commitee": true,
+          "board": true,
+          "number_of_board_members": 5,
+          "_id": "5a1531f38b35fe05627caa2e"
+        },
+        "reporting_systems": {
+          "frequency_of_board_meetings": "Quarterly",
+          "internal_management_meetings": "Monthly",
+          "documented_board_meetings_minutes_available": true,
+          "documented_management_meetings_minutes_available": true,
+          "annual_report_prepared": true,
+          "notes": "It is to be noted that the CAO only writes annual reports only at funder’s request to submit, they informed us that currently they submit annual reports to DSD with the department template. ",
+          "_id": "5a1531f38b35fe05627caa2f"
+        },
+        "strategic_planning": {
+          "strategic_planning_frequency": "Once every Four Years",
+          "existence_of_vision_and_mission": true,
+          "strategic_planning_conducted": true,
+          "_id": "5a1531f38b35fe05627caa30"
+        },
+        "monitoring_and_evaluation": {
+          "period": {
+            "from": "2017-11-22T08:14:43.785Z",
+            "to": "2017-11-22T08:14:43.785Z"
+          },
+          "internal_evaluation": {
+            "conducted": "No",
+            "how_many_per_year": null,
+            "conducted_by": null
+          },
+          "external_evaluation": {
+            "conducted": "No",
+            "how_many_per_year": null,
+            "conducted_by": null
+          },
+          "_id": "5a1531f38b35fe05627caa31"
+        },
+        "programme_planning_and_management": {
+          "clear_programme_objectives_and_deliverables": "Yes",
+          "the_organisation_incorporates_learning_from_projects_and_evaluations_into_strategic_planning": true,
+          "_id": "5a1531f38b35fe05627caa32"
+        },
+        "_id": "5a1531f38b35fe05627caa2b"
+      },
+      "organisational_capacity_and_resources": {
+        "level_of_staff_skill": [
+          {
+            "staff_status": "Full Time",
+            "_id": "5a1561e18b35fe05627cc364",
+            "with_post_graduate_degree": 0,
+            "with_degree": 0,
+            "with_tertiary_qualification": 2,
+            "with_matric": 3,
+            "total": 5
+          },
+          {
+            "staff_status": "Part Time",
+            "_id": "5a1561e18b35fe05627cc363",
+            "with_post_graduate_degree": 0,
+            "with_degree": 0,
+            "with_tertiary_qualification": 1,
+            "with_matric": 1,
+            "total": 2
+          }
+        ],
+        "staff_profile_and_turnover": [
+          {
+            "race": "Black",
+            "sex": "Female",
+            "_id": "5a1561e18b35fe05627cc367",
+            "role_of_staff_member": "Project Coordinator",
+            "years_of_employment": 6
+          },
+          {
+            "race": "Black",
+            "sex": "Male",
+            "_id": "5a1561e18b35fe05627cc366",
+            "role_of_staff_member": "Paralegal",
+            "years_of_employment": 6
+          },
+          {
+            "race": "Black",
+            "sex": "Female",
+            "_id": "5a1561e18b35fe05627cc365",
+            "role_of_staff_member": "Administrator",
+            "years_of_employment": 2
+          }
+        ],
+        "staff_development": [
+          {
+            "type": "In House",
+            "_id": "5a1561e18b35fe05627cc369",
+            "service_provider": "internal staff",
+            "type_of_training": "Internal training, no accreditations, passing of learnt info from outside. ",
+            "frequency": "2 times a year"
+          },
+          {
+            "type": "External",
+            "_id": "5a1561e18b35fe05627cc368",
+            "service_provider": "Choice Trust: (M&E), Financial Management. Foundation for Professional Development: Gender Based Violence and Counselling Skills. ",
+            "type_of_training": "Administration"
+          }
+        ],
+        "duration_of_existance": {
+          "years_in_operation": "10-15 Years",
+          "year_established": "1998-01-01T00:00:00.000Z",
+          "year_registered": "2002-03-01T00:00:00.000Z",
+          "_id": "5a1531f38b35fe05627caa26"
+        },
+        "human_resource_policies_and_procedures": {
+          "documented_job_descriptions": true,
+          "documented_human_resource_policy_or_manual": true,
+          "performance_management_systems_in_place": null,
+          "dedicated_human_resource_staff_member": null,
+          "_id": "5a1531f38b35fe05627caa27"
+        },
+        "use_of_technology": {
+          "platforms": null,
+          "access_to_computers": true,
+          "access_to_internet": true,
+          "uses_social_media": null,
+          "website": null,
+          "_id": "5a1531f38b35fe05627caa28"
+        },
+        "case_management_system": {
+          "case_management_system": [
+            "Manual",
+            "Electronic"
+          ],
+          "description": "Own template",
+          "_id": "5a1531f38b35fe05627caa29"
+        },
+        "collaboration_and_network": {
+          "specify": [
+            {
+              "_id": "5a1561e18b35fe05627cc370",
+              "partner": "Letlanthe Drop-in Centre, "
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc36f",
+              "partner": "Public Protector Limpopo Provincial Office"
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc36e",
+              "partner": "Dept. of Health"
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc36d",
+              "partner": "SAHRC"
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc36c",
+              "partner": "CGE"
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc36b",
+              "partner": "Legal Aid SA"
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc36a",
+              "partner": "University of Limpopo Law Clinic"
+            }
+          ],
+          "use_of_networks_and_partnerships": true,
+          "_id": "5a1531f38b35fe05627caa2a"
+        },
+        "_id": "5a1531f38b35fe05627caa25"
+      },
+      "financial_viability": {
+        "condition_and_terms_of_funding": [
+          {
+            "_id": "5a1561e18b35fe05627cc355",
+            "challenges": "-\tDelaying paying grantees hummer the planned programmes;\n-\tLess communications from funders\n-\tCompliancy training conducted after first tranche paid\n",
+            "funding_source": "Various donors"
+          }
+        ],
+        "resources_and_assests": [
+          {
+            "_id": "5a1561e18b35fe05627cc362",
+            "type": "Telephone",
+            "possession": "Yes",
+            "specify": "Prepaid"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc361",
+            "type": "Vehicle, Immovable Assets",
+            "possession": "Yes",
+            "specify": "Saicom Telephone, 3 Desk, 9 file cabinets, 2 computers, Printer4 chairs"
+          }
+        ],
+        "financial_system": {
+          "office": {
+            "does_have": true,
+            "how_many": 1
+          },
+          "financial_systems": [],
+          "bank_account": true,
+          "dedicated_financial_staff": true,
+          "annual_independant_audits": true,
+          "book_keeping_system": true,
+          "_id": "5a1531f38b35fe05627caa22"
+        },
+        "funding": {
+          "monetary_sources": [
+            {
+              "period": {
+                "from_year": "2016-01-01T00:00:00.000Z",
+                "to_year": "2017-12-01T00:00:00.000Z"
+              },
+              "sources": [
+                {
+                  "duration": "1 Year",
+                  "type_of_funding": [
+                    "Event/Activity"
+                  ],
+                  "_id": "5a15620e8b35fe05627cc390",
+                  "source_type": "Goverment Grant/Tender",
+                  "sources_name_list": "Dept. of Labour",
+                  "rand_amount": 229000
+                },
+                {
+                  "duration": "1 Year",
+                  "type_of_funding": [
+                    "Event/Activity"
+                  ],
+                  "_id": "5a1562158b35fe05627cc3aa",
+                  "source_type": "International Donor",
+                  "sources_name_list": "Hivos SA",
+                  "rand_amount": 100000
+                },
+                {
+                  "duration": "1 Year",
+                  "type_of_funding": [
+                    "Event/Activity",
+                    "Core"
+                  ],
+                  "_id": "5a1562cf8b35fe05627cc3c5",
+                  "source_type": "Independant Donor",
+                  "sources_name_list": "FHR",
+                  "rand_amount": 180000
+                },
+                {
+                  "duration": "1 Year",
+                  "type_of_funding": [
+                    "Core"
+                  ],
+                  "_id": "5a1562cf8b35fe05627cc3c4",
+                  "source_type": "Corporate CSI",
+                  "sources_name_list": "Univ. of Limpopo Law Clinic ",
+                  "rand_amount": 40000
+                }
+              ],
+              "_id": "5a15620e8b35fe05627cc38f"
+            }
+          ],
+          "non_monetary_source": [
+            {
+              "period": {
+                "from_year": "2016-01-01T00:00:00.000Z",
+                "to_year": "2017-11-22T11:45:02.573Z"
+              },
+              "sources": [
+                {
+                  "type_of_assitance": [
+                    "Technical Assistance"
+                  ],
+                  "_id": "5a15631d8b35fe05627cc3e1",
+                  "provided_by": "Thakgalang Youth Forum"
+                },
+                {
+                  "type_of_assitance": [
+                    "Office Space"
+                  ],
+                  "_id": "5a15631d8b35fe05627cc3e0",
+                  "provided_by": "Renting inside Church premises"
+                }
+              ],
+              "_id": "5a15631d8b35fe05627cc3df"
+            }
+          ],
+          "_id": "5a1531f38b35fe05627caa23"
+        },
+        "expenditure": {
+          "monthly_budget_information": [
+            {
+              "_id": "5a1561e18b35fe05627cc360",
+              "budget_item": "Salaries",
+              "monthly_expenditure": 3075,
+              "required_monthly": 10500,
+              "shortfall": 7425
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc35f",
+              "budget_item": "Office Rental",
+              "monthly_expenditure": 500,
+              "required_monthly": 600,
+              "shortfall": 100
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc35e",
+              "budget_item": "Maintenance and Repairs",
+              "monthly_expenditure": 0,
+              "required_monthly": 1000,
+              "shortfall": 1000
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc35d",
+              "budget_item": "Utilities – water, electricity",
+              "monthly_expenditure": 300,
+              "required_monthly": 300,
+              "shortfall": 0
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc35c",
+              "budget_item": "Stationary",
+              "monthly_expenditure": 2000,
+              "required_monthly": 3000,
+              "shortfall": 1000
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc35b",
+              "budget_item": "Telephone Costs",
+              "monthly_expenditure": 1000,
+              "required_monthly": 1500,
+              "shortfall": 500
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc35a",
+              "budget_item": "Internet",
+              "monthly_expenditure": 725,
+              "required_monthly": 1000,
+              "shortfall": 275
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc359",
+              "budget_item": "Transport",
+              "monthly_expenditure": 1500,
+              "required_monthly": 2500,
+              "shortfall": 1000
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc358",
+              "budget_item": "Stipends for clients",
+              "monthly_expenditure": 0,
+              "required_monthly": 500,
+              "shortfall": 500
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc357",
+              "budget_item": "Catering for clients",
+              "monthly_expenditure": 0,
+              "required_monthly": 500,
+              "shortfall": 500
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc356",
+              "budget_item": "Office Sundries",
+              "monthly_expenditure": 0,
+              "required_monthly": 1000,
+              "shortfall": 0
+            }
+          ],
+          "after_exhausting_montly_budget": {
+            "reserves_remaining": "Yes",
+            "how_much": "500"
+          },
+          "_id": "5a1531f38b35fe05627caa24"
+        },
+        "_id": "5a1531f38b35fe05627caa21"
+      },
+      "accessibility": {
+        "state_service_points": [
+          {
+            "_id": "5a1561e18b35fe05627cc347",
+            "service_point": "Police Station",
+            "distance": "2 to 5km"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc346",
+            "service_point": "Magistrates Court",
+            "distance": "2 to 5km"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc345",
+            "service_point": "SASSA",
+            "distance": "2 to 5km"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc344",
+            "service_point": "Department of Labour",
+            "distance": "2 to 5km"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc343",
+            "service_point": "Department of Home Affairs",
+            "distance": "2 to 5km"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc342",
+            "service_point": "Department of Social Development",
+            "distance": "2 to 5km"
+          }
+        ],
+        "beneficiary_access": [
+          {
+            "_id": "5a1561e18b35fe05627cc34f",
+            "access_type": "Mobile offices",
+            "yes_or_no": "No"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc34e",
+            "access_type": "Workshops",
+            "yes_or_no": "Yes",
+            "rank": 1
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc34d",
+            "access_type": "Site Visits/Inspections",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc34c",
+            "access_type": "Media (Pamphlets, notices, posters, Community Radio etc)",
+            "yes_or_no": "Yes",
+            "rank": 2
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc34b",
+            "access_type": "Referrals from state agencies",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc34a",
+            "access_type": "Referrals from other CSOs/CBOs",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc349",
+            "access_type": "Referrals from Court",
+            "yes_or_no": "No"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc348",
+            "access_type": "Community Meetings or traditional leaders",
+            "yes_or_no": "Yes",
+            "rank": 3
+          }
+        ],
+        "language_accessibility": [
+          {
+            "_id": "5a1561e18b35fe05627cc354",
+            "language": "English",
+            "cso_staff_language_proficiency": true
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc353",
+            "language": "Tswana",
+            "cso_staff_language_proficiency": true
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc352",
+            "language": "Venda",
+            "cso_staff_language_proficiency": true
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc351",
+            "language": "Northern Sotho",
+            "cso_staff_language_proficiency": true
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc350",
+            "language": "Southern Sotho",
+            "cso_staff_language_proficiency": true
+          }
+        ],
+        "cso_location": {
+          "address": "Bloodriver village, New Era Drive, Stand No 25, next to Mulaudzi Secondary School.",
+          "location": "Rural",
+          "town_municipality": "Polokwane Municipality",
+          "province": "Limpopo",
+          "country": "South Africa",
+          "_id": "5a1531f38b35fe05627caa1f"
+        },
+        "geographical_reach": {
+          "locations": [
+            {
+              "_id": "5a1561e18b35fe05627cc33e",
+              "location": "Various parts of Seshego, including Makgofe, Perskebult, Sengatane, Chebeng etc. "
+            }
+          ],
+          "town_municipalities": [
+            {
+              "_id": "5a1561e18b35fe05627cc33f",
+              "municipality": "Polokwane Municipality"
+            }
+          ],
+          "provinces": [
+            {
+              "_id": "5a1561e18b35fe05627cc340",
+              "province": "Limpopo"
+            }
+          ],
+          "countries": [
+            {
+              "_id": "5a1561e18b35fe05627cc341",
+              "country": "South Africa"
+            }
+          ],
+          "_id": "5a1531f38b35fe05627caa20"
+        },
+        "_id": "5a1531f38b35fe05627caa1e"
+      },
+      "focus_area_and_beneficiary_group": {
+        "target_beneficiary_group": [
+          {
+            "_id": "5a1561e18b35fe05627cc33d",
+            "beneficiary_type": "General population",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc33c",
+            "beneficiary_type": "Children’s Rights (under 18 years)",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc33b",
+            "beneficiary_type": "Women",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc33a",
+            "beneficiary_type": "Youth (14-35yrs)",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc339",
+            "beneficiary_type": "LGBTI",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc338",
+            "beneficiary_type": "Migrants & refugees",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc337",
+            "beneficiary_type": "Vulnerable workers",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc336",
+            "beneficiary_type": "Sex Workers",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc335",
+            "beneficiary_type": "Farmworkers and Farm dwellers",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc334",
+            "beneficiary_type": "Rural poor communities",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc333",
+            "beneficiary_type": "Urban poor communities",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc332",
+            "beneficiary_type": "People living with disabilities",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc331",
+            "beneficiary_type": "People affected by HIV/AIDs",
+            "yes_or_no": "Yes"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc330",
+            "beneficiary_type": "Other",
+            "specify": "Elderly people",
+            "yes_or_no": "Yes"
+          }
+        ],
+        "focus_area": {
+          "labour_rights": [
+            "UIF",
+            "Workman’s Compensation",
+            "Working Conditions",
+            "CCMA Support"
+          ],
+          "legal_rights": [
+            "Access to Information"
+          ],
+          "gender": [
+            "Domestic Violence",
+            "Rape"
+          ],
+          "children": [
+            "Child Abuse",
+            "Child Neglect",
+            "Social Services (grants)"
+          ],
+          "housing": [
+            "Access to Housing",
+            "Evictions",
+            "Living Conditions",
+            "Water and Sanitation"
+          ],
+          "health": [
+            "Access to Healthcare",
+            "Health Promotion"
+          ],
+          "education": [
+            "School",
+            "Further Education and Training",
+            "ECD"
+          ],
+          "social_services": [
+            "Access to Protection Services (Social Workers)",
+            "Grants"
+          ],
+          "safety_crime_and_violence": [
+            "Prevention programmes",
+            "Support services to victims who have succumbed to violence",
+            "Restorative Justice/ADR/Conflict Dispute Resolution/Mediation"
+          ],
+          "debt_management": [],
+          "family_law": [
+            "Deceased estates",
+            "Wills",
+            "Divorce",
+            "Maintenance",
+            "Custody"
+          ],
+          "top_five_focus_areas": [
+            {
+              "_id": "5a1561e18b35fe05627cc32f",
+              "focus_area": "Labour Rights",
+              "rank": 1
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc32e",
+              "focus_area": "Gender",
+              "rank": 2
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc32d",
+              "focus_area": "Children",
+              "rank": 3
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc32c",
+              "focus_area": "Social Services",
+              "rank": 4
+            },
+            {
+              "_id": "5a1561e18b35fe05627cc32b",
+              "focus_area": "Family Law",
+              "rank": 5
+            }
+          ],
+          "_id": "5a1531f38b35fe05627caa1d"
+        },
+        "_id": "5a1531f38b35fe05627caa1c"
+      },
+      "service_provision": {
+        "activity_participation": [
+          {
+            "_id": "5a1561e18b35fe05627cc32a",
+            "activity": "Advocacy and Lobbying/ Awareness",
+            "yes_or_no": "No"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc329",
+            "activity": "Research",
+            "yes_or_no": "No"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc328",
+            "activity": "Human Rights Education and Awareness",
+            "yes_or_no": "Yes",
+            "specify": "To raise awareness on basic human rights as enshrined within the constitution of the republic of South Africa including educating people about the rights of the LGBTI within our communities. "
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc327",
+            "activity": "Health promotion",
+            "yes_or_no": "Yes",
+            "specify": "They raise awareness about the HIV/Aids and other health related matters as guided by local clinics whom sometimes come to present. "
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc326",
+            "activity": "Public and civic participation",
+            "yes_or_no": "No"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc325",
+            "activity": "Community mobilisation",
+            "yes_or_no": "Yes",
+            "specify": "CAO assist in mobilising their societies to demand what is due to them by government, they play a role in encouraging public not to accept poor services."
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc324",
+            "activity": "Capacity building of civil society organisations",
+            "yes_or_no": "Yes",
+            "specify": "CAO participated on ensuring that local CBOs including drop-in centres are registered with Dept. of Labour for UIF. This programme was funded by DoL 2016.  "
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc323",
+            "activity": "Community Development",
+            "yes_or_no": "Yes",
+            "specify": "Part of the core founding principles of the org was to uplift the local skills especially youth so they can easily find employment or create. "
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc322",
+            "activity": "Conflict Dispute Resolution/Mediation/ADR",
+            "yes_or_no": "Yes",
+            "specify": "CAO participate in mediating within the family disagreement and/or conflict and maximize peace within family members, if after the mediation feuds still continues they refer to relevant government institution. "
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc321",
+            "activity": "Skills Development",
+            "yes_or_no": "Yes",
+            "specify": "They assist public by guiding how to write letters, CVs and even on general life skills. "
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc320",
+            "activity": "Business Development",
+            "yes_or_no": "No"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc31f",
+            "activity": "Help/Provide Access to information/services",
+            "yes_or_no": "Yes",
+            "specify": "They access information based on their programme, for instance, if the CAO want to conduct workshops on HIV/AIDS, they will go to Dept of Health or Clinics to collect pamphlets to hand over to attendees. "
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc31e",
+            "activity": "Networking and Forums",
+            "yes_or_no": "Yes",
+            "specify": "They network with local CSOs, one of it is Bloodriver Community Forum."
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc31d",
+            "activity": "Monitoring and Evaluation",
+            "yes_or_no": "Yes",
+            "specify": "They grantee participated in the M&E workshops that was organised by Choice Trust, and currently due to lack of funds, they conduct own internal evaluations of their work. "
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc31c",
+            "activity": "Fundraising",
+            "yes_or_no": "Yes",
+            "specify": "The CAO participate in fundraising by writing profile document of the CAO, letters to different donors, dept. and even shops for donations. "
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc31b",
+            "activity": "Service Delivery Provision"
+          },
+          {
+            "_id": "5a1561e18b35fe05627cc31a",
+            "activity": "Provide advice services",
+            "yes_or_no": "Yes",
+            "specify": "Paralegal services to the communities"
+          },
+          {
+            "_id": "5a156db88b35fe05627cc593",
+            "activity": "Psycho-social services",
+            "yes_or_no": "No"
+          },
+          {
+            "_id": "5a156db88b35fe05627cc592",
+            "activity": "Trauma Counselling",
+            "yes_or_no": "No"
+          },
+          {
+            "_id": "5a156db88b35fe05627cc591",
+            "activity": "Diversion Services",
+            "yes_or_no": "No"
+          },
+          {
+            "_id": "5a156de98b35fe05627cc5c9",
+            "activity": "Assisting with applications to access social grants, ID applications, UIF, workman’s compensation, drafting letters etc.",
+            "yes_or_no": "Yes",
+            "specify": "These services forms one of the CAO main duties. "
+          },
+          {
+            "_id": "5a156df98b35fe05627cc5e3",
+            "activity": "Other Statutory Services performed on behalf of state",
+            "yes_or_no": "No"
+          }
+        ],
+        "total_number_of_cases": [
+          {
+            "period": {
+              "from": "2016-01-01T00:00:00.000Z",
+              "to": "2016-12-01T00:00:00.000Z"
+            },
+            "_id": "5a156fb18b35fe05627cc654",
+            "cases": 761
+          },
+          {
+            "period": {
+              "from": "2017-01-01T00:00:00.000Z",
+              "to": "2017-04-01T00:00:00.000Z"
+            },
+            "_id": "5a156fb18b35fe05627cc653",
+            "cases": 146
+          }
+        ],
+        "referrals_past_month": {
+          "referrals": [
+            {
+              "referrals": [
+                {
+                  "_id": "5a156d3b8b35fe05627cc516",
+                  "place": null,
+                  "times": 4
+                }
+              ],
+              "_id": "5a156d3b8b35fe05627cc515",
+              "referral_type": "Legal Aid"
+            },
+            {
+              "referrals": [
+                {
+                  "_id": "5a156fb18b35fe05627cc659",
+                  "place": null,
+                  "times": 18
+                }
+              ],
+              "_id": "5a156fb18b35fe05627cc658",
+              "referral_type": "Social Services"
+            },
+            {
+              "referrals": [
+                {
+                  "_id": "5a156fb18b35fe05627cc657",
+                  "place": "PP",
+                  "times": 2
+                },
+                {
+                  "_id": "5a156fb18b35fe05627cc656",
+                  "place": "CCMA",
+                  "times": 1
+                }
+              ],
+              "_id": "5a156fb18b35fe05627cc655",
+              "referral_type": "Chapter 9’s/Ombudsman"
+            },
+            {
+              "referrals": [
+                {
+                  "_id": "5a1570018b35fe05627cc675",
+                  "place": "UL Law Clinic ",
+                  "times": 3
+                },
+                {
+                  "_id": "5a1570018b35fe05627cc674",
+                  "place": "Pro bono.org ",
+                  "times": 1
+                }
+              ],
+              "_id": "5a1570018b35fe05627cc673",
+              "referral_type": "Other",
+              "other": ""
+            }
+          ],
+          "month": "2017-05-01T00:00:00.000Z"
+        },
+        "programmes_ran": [
+          {
+            "_id": "5a1570488b35fe05627cc68f",
+            "description": "Community workshops on basic human rights and health promotion, paralegal services, mediation and referrals. ",
+            "year": "2016-11-01T00:00:00.000Z"
+          }
+        ],
+        "achievements_impact": [
+          {
+            "_id": "5a1570488b35fe05627cc690",
+            "achievement_impact": "-\tOne of the highlighted achievement by the CAO was house and train members of the LGBTI. \n-\tTo invite and educate traditional leaders on LGBTI so they transfer this skills/information to their communities, out of 16 traditional leaders of the area of Bloodriver, 10 managed to come and participate and committed on protecting and accepting these people. \n"
+          }
+        ],
+        "average_number_of_cases_per_day": 15,
+        "_id": "5a1531f38b35fe05627caa1b"
+      },
+      "narrative": [],
+      "gps_fixed": [
+        -23.820343,
+        29.368238
+      ]
+    }
+  ]
+}

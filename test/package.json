@@ -1,0 +1,7 @@
+{
+  "name": "jsreport-server",
+  "dependencies": {
+    "jsreport": "^1.7.0",
+    "phantomjs-prebuilt": "^2.1.16"
+  }
+}

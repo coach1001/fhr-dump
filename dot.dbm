@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.8.2-beta1" last-position="0,1" last-zoom="1"
+	 default-schema="public" default-owner="postgres">
+<database name="new_database">
+</database>
+
+<schema name="public" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<table name="methods">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="249" y="17"/>
+	<column name="id" not-null="true">
+		<type name="integer"/>
+	</column>
+	<column name="method">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="label">
+		<type name="text"/>
+	</column>
+	<column name="description">
+		<type name="text"/>
+	</column>
+	<constraint name="method_pkey" type="pk-constr" table="public.methods">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="method_uq" type="uq-constr" table="public.methods">
+		<columns names="method" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="sections">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="696" y="35"/>
+	<column name="id" not-null="true">
+		<type name="integer" length="255"/>
+	</column>
+	<column name="method">
+		<type name="integer" length="255"/>
+	</column>
+	<column name="section">
+		<type name="integer"/>
+	</column>
+	<column name="label">
+		<type name="text"/>
+	</column>
+	<column name="description">
+		<type name="text"/>
+	</column>
+	<constraint name="section_pkey" type="pk-constr" table="public.sections">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="section_uq" type="uq-constr" table="public.sections">
+		<columns names="method,section" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="samples">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="102" y="325"/>
+	<column name="id" not-null="true">
+		<type name="serial"/>
+	</column>
+	<column name="sample_set">
+		<type name="integer" length="255"/>
+	</column>
+	<column name="sample">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="latitude">
+		<type name="real"/>
+	</column>
+	<column name="longitude">
+		<type name="real"/>
+	</column>
+	<column name="created_on">
+		<type name="timestamp"/>
+	</column>
+	<column name="created_by">
+		<type name="integer"/>
+	</column>
+	<column name="checked_on">
+		<type name="timestamp"/>
+	</column>
+	<column name="checked_by">
+		<type name="integer"/>
+	</column>
+	<column name="approved_on">
+		<type name="timestamp"/>
+	</column>
+	<column name="approved_by">
+		<type name="integer"/>
+	</column>
+	<constraint name="sample_pkey" type="pk-constr" table="public.samples">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="sample_uq" type="uq-constr" table="public.samples">
+		<columns names="sample" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="sample_sets">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="113" y="552"/>
+	<column name="id" not-null="true">
+		<type name="serial"/>
+	</column>
+	<column name="sample_set">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="created_on">
+		<type name="timestamp"/>
+	</column>
+	<column name="created_by">
+		<type name="integer"/>
+	</column>
+	<column name="checked_on">
+		<type name="timestamp"/>
+	</column>
+	<column name="checked_by">
+		<type name="integer"/>
+	</column>
+	<column name="approved_on">
+		<type name="timestamp"/>
+	</column>
+	<column name="approved_by">
+		<type name="integer"/>
+	</column>
+	<constraint name="sample_set_pkey" type="pk-constr" table="public.sample_sets">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="sample_set_uq" type="uq-constr" table="public.sample_sets">
+		<columns names="sample_set" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="variables">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="1051" y="298"/>
+	<column name="id" not-null="true">
+		<type name="serial"/>
+	</column>
+	<column name="section">
+		<type name="integer"/>
+	</column>
+	<column name="symbol" not-null="true">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="label">
+		<type name="text"/>
+	</column>
+	<column name="description">
+		<type name="text"/>
+	</column>
+	<column name="unit">
+		<type name="character varying" length="50"/>
+	</column>
+	<column name="input_type" not-null="true" default-value="'input'">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="default_value">
+		<type name="real"/>
+	</column>
+	<column name="minimum">
+		<type name="real"/>
+	</column>
+	<column name="maximum">
+		<type name="real"/>
+	</column>
+	<column name="formula">
+		<type name="text"/>
+	</column>
+	<column name="calculation_order" not-null="true" default-value="0">
+		<type name="integer"/>
+	</column>
+	<constraint name="variable_pkey" type="pk-constr" table="public.variables">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="variable_uq" type="uq-constr" table="public.variables">
+		<columns names="symbol" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="sample_has_variables">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="647" y="364"/>
+	<column name="id" not-null="true">
+		<type name="serial"/>
+	</column>
+	<column name="sample">
+		<type name="integer" length="255"/>
+	</column>
+	<column name="variable">
+		<type name="integer" length="255"/>
+	</column>
+	<column name="value" not-null="true" default-value="0.0">
+		<type name="real"/>
+	</column>
+	<constraint name="sample_variable_uq" type="uq-constr" table="public.sample_has_variables">
+		<columns names="sample,variable" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="sample_has_variable_pkey" type="pk-constr" table="public.sample_has_variables">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<table name="sample_has_methods">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="207" y="174"/>
+	<column name="id" not-null="true">
+		<type name="serial"/>
+	</column>
+	<column name="method" not-null="true">
+		<type name="integer"/>
+	</column>
+	<column name="sample" not-null="true">
+		<type name="integer" length="255"/>
+	</column>
+	<constraint name="sample_method_pkey" type="pk-constr" table="public.sample_has_methods">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+	<constraint name="sample_method_uq" type="uq-constr" table="public.sample_has_methods">
+		<columns names="method,sample" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<constraint name="method_fkey" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="CASCADE" del-action="SET NULL" ref-table="public.methods" table="public.sections">
+	<columns names="method" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="sample_set" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="CASCADE" del-action="SET NULL" ref-table="public.sample_sets" table="public.samples">
+	<columns names="sample_set" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="section_fkey" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="CASCADE" del-action="SET NULL" ref-table="public.sections" table="public.variables">
+	<columns names="section" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="sample_fkey" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="CASCADE" del-action="SET NULL" ref-table="public.samples" table="public.sample_has_variables">
+	<columns names="sample" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="variable_fkey" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="CASCADE" del-action="SET NULL" ref-table="public.variables" table="public.sample_has_variables">
+	<columns names="variable" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="method_fkey" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="CASCADE" del-action="SET NULL" ref-table="public.methods" table="public.sample_has_methods">
+	<columns names="method" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<constraint name="sample_fkey" type="fk-constr" comparison-type="MATCH FULL"
+	 upd-action="CASCADE" del-action="SET NULL" ref-table="public.samples" table="public.sample_has_methods">
+	<columns names="sample" ref-type="src-columns"/>
+	<columns names="id" ref-type="dst-columns"/>
+</constraint>
+
+<relationship name="rel_tabs_methods" type="relfk"
+	 src-table="public.sections"
+	 dst-table="public.methods"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_samples_sample_sets" type="relfk"
+	 src-table="public.samples"
+	 dst-table="public.sample_sets"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_formula_sections" type="relfk"
+	 src-table="public.variables"
+	 dst-table="public.sections"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_sample_has_variables_samples" type="relfk"
+	 src-table="public.sample_has_variables"
+	 dst-table="public.samples"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_sample_has_variables_variables" type="relfk"
+	 src-table="public.sample_has_variables"
+	 dst-table="public.variables"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_sample_has_methods_methods" type="relfk"
+	 src-table="public.sample_has_methods"
+	 dst-table="public.methods"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="rel_sample_has_methods_samples" type="relfk"
+	 src-table="public.sample_has_methods"
+	 dst-table="public.samples"
+	 src-required="false" dst-required="false"/>
+
+</dbmodel>

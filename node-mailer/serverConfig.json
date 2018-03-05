@@ -1,0 +1,18 @@
+{
+	"app_mail_host" 				: "smtp.gmail.com",
+	"app_mail_port" 				: 587,
+	"app_mail_user" 				: "gpr.fhr@gmail.com",
+	"app_mail_password" 			: "Justice##@!2017",
+	"app_sender_email" 				: "gpr.fhr@gmail.com",
+	"app_email_subject_prefix" 		: "GPR Notification - ",
+	"app_email_notifaction_table" 	: "/email_notifications?select=*&sent=eq.false&failed=eq.false&status_message=eq.'AWAITING'",
+	"app_mail_retries_before_fail" 	: 5,
+
+	"gpr_login_url" : "http://gpr.fhr.org.za:3004/rpc/login",
+	"gpr_emailer_credentials" : {
+		"email" : "ldap@fhr.org.za",
+		"pass" : "Justice##@!1996"
+	},
+	"gpr_email_url" : "http://gpr.fhr.org.za:3002/email_notifications?select=*&sent=eq.false&failed=eq.false&status_message=eq.AWAITING",
+	"gpr_email_update_url" : "http://gpr.fhr.org.za:3002/email_notifications?id=eq."	
+}

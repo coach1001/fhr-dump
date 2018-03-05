@@ -1,0 +1,15 @@
+{
+    "shortid": "ByN8Ax-NG",
+    "recipe": "html-with-browser-client",
+    "engine": "handlebars",
+    "modificationDate": {
+        "$$date": 1518531229463
+    },
+    "_id": "PB8C12IXbjPw9njN",
+    "data": null,
+    "scripts": [
+        {
+            "shortid": "B1CODUQVG"
+        }
+    ]
+}

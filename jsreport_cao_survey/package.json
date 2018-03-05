@@ -1,0 +1,21 @@
+{
+  "name": "jsreport-server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "jsreport": "jsreport"
+  },
+  "jsreport": {
+    "entryPoint": "server.js"
+  },
+  "dependencies": {
+    "jsreport": "1.9.2",
+    "jsreport-electron-pdf": "^2.7.1",
+    "jsreport-pdf-utils": "^0.3.1",
+    "jsreport-phantom-pdf": "^1.4.6",
+    "jsreport-wkhtmltopdf": "^1.4.0",
+    "phantomjs-exact-2-1-1": "^0.1.0",
+    "phantomjs-prebuilt": "^2.1.16",
+    "request": "^2.83.0"
+  }
+}

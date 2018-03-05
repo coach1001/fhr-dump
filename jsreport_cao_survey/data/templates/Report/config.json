@@ -1,0 +1,13 @@
+{
+    "shortid": "rkmXFvEwG",
+    "recipe": "wkhtmltopdf",
+    "engine": "handlebars",
+    "wkhtmltopdf": {
+        "toc": true,
+        "footer": "<!DOCTYPE html>\n<html><head>\n    <style>\n        {#asset bootstrap.css @encoding=utf8}\n        {#asset font-awesome.css @encoding=utf8}\n        .fa {\n            font-family:'fontawesome-webfont'!important; \n        }\n        @font-face {\n            font-family: 'fontawesome-webfont';\n            src: url({#asset fontawesome-webfont.woff @encoding=dataURI});\n            format('woff');\n        }\n    </style>\n</head><body>\nPage <span id='page'></span> of <span id='topage'></span>\n<script> \nvar vars={};\nvar x=window.location.search.substring(1).split('&');\nfor (var i in x) {var z=x[i].split('=',2);vars[z[0]] = unescape(z[1]);}\ndocument.getElementById('page').innerHTML = vars.page; \ndocument.getElementById('topage').innerHTML = vars.topage; \n</script> \n</body></html>"
+    },
+    "modificationDate": {
+        "$$date": 1518791826009
+    },
+    "_id": "1LU49lNfyuwsbWuv"
+}

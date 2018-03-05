@@ -1,0 +1,40 @@
+<!-- <div class="span12 eighth-height">
+    <div class="row-fluid eighth-height top-buffer">
+      <div class="eighth-height">
+      
+        <a class="pull-right" ng-click="vm.exitDiag()">
+          <span class="glyphicon glyphicon-remove-sign btn-glyphicon-nt"></span>
+        </a>
+      
+        <a class="pull-right" ng-click="vm.minApp()">
+          <span class="glyphicon glyphicon glyphicon-minus-sign btn-glyphicon-nt"></span>
+        </a>
+      
+        <a class="pull-left" ui-sref="main-menu" ng-if="vm.state === 2">
+          <span class="glyphicon glyphicon-circle-arrow-left btn-glyphicon-nt"></span>
+        </a>
+      
+
+      </div>
+    </div>
+
+</div>
+ -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 top-buffer">
+      <a class="pull-left" ui-sref="main-menu" ng-if="vm.state === 2">
+        <span class="glyphicon glyphicon-circle-arrow-left btn-glyphicon-nt"></span>
+      </a>
+    </div>
+    <div class="col-md-6"></div>
+    <div class="col-md-4 top-buffer">
+      <a class="pull-right" ng-click="vm.exitDiag()">
+        <span class="glyphicon glyphicon-remove-sign btn-glyphicon-nt"></span>
+      </a>
+      <a class="pull-right" ng-click="vm.minApp()">
+        <span class="glyphicon glyphicon glyphicon-minus-sign btn-glyphicon-nt"></span>
+      </a>
+    </div>
+  </div>
+</div>

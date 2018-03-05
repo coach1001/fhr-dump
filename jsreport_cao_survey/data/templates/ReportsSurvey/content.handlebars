@@ -1,0 +1,274 @@
+<style>
+    {#asset bootstrap.print.css @encoding=utf8}
+    {#asset font-awesome.css @encoding=utf8}
+    .fa {
+        font-family:'fontawesome-webfont'!important; 
+    }
+    @font-face {
+        font-family: 'fontawesome-webfont';
+        src: url({#asset fontawesome-webfont.woff @encoding=dataURI});
+        format('woff');
+    }
+    .no-padding-left {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        padding-left: 15px;
+    }
+    .no-padding-right {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 15px;;
+        padding-left: 0;
+    }
+
+</style>
+<h1>Donor Analysis</h1>
+<h1>Staff Analysis</h1>
+<h1>Individual Surveys</h1>
+{{#each data.allSurveys}}
+    <div class="card border-0">
+        <img class="card-img-top" id="{{this._id}}_map"></img>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-4">
+                    <img src="{{this.general.images.0.url}}" style="width:100%;max-height:180px;" alt="Placeholder image">
+                </div>
+                <div class="col-8">
+                    <h4 class="font-weight-bold">{{this.general.name}}</h4>
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <div class="d-inline-block"> {{this.general.gps_coordinates}}</div>    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>{{this.general.address}}</p>    
+                        </div>
+                    </div>
+                    <div class="mb-1"></div>
+                    <div class="row">
+                        <ul>
+                            <li>Established in {{formatYear this.organisational_capacity_and_resources.duration_of_existance.year_established short}}</li>
+                            <li>Registered on {{formatDate this.organisational_capacity_and_resources.duration_of_existance.year_registered}}</li>
+                            <li>In Operation for {{this.organisational_capacity_and_resources.duration_of_existance.years_in_operation}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-7">
+                    <div class="card">
+                        <div class="card-header font-weight-bold">
+                            Funding <small class="text-muted">2016/17</small>
+                        </div>
+                        <div class="card-body">
+                            <div id="{{this._id}}_fund" style="width:320px;height:320px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="card">
+                        <div class="card-header font-weight-bold">
+                            Focus Areas
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            {{#each this.focus_area_and_beneficiary_group.focus_area.top_five_focus_areas}}
+                                <li class="list-group-item">{{this.focus_area}}</li>
+                            {{else}}
+                                <p>No content</p>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </div>
+    <div style='page-break-before: always;'></div>
+    
+    <div class="card">
+        <div class="card-header font-weight-bold">
+            Organisational Capacity and Resources
+        </div>
+        <div class="row ">
+            <div class="col no-padding-left">
+                <div class="card-body">
+                    <div class="card">
+                        <div class="card-header font-weight-bold">
+                            Staff Status and Education</small>
+                        </div>
+                        <div class="card-body">
+                            <div id="{{this._id}}_sse" style="width:220px;height:200px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col no-padding-right">
+                <div class="card-body">
+                    <div class="card">
+                        <div class="card-header font-weight-bold">
+                            Staff Status and Education</small>
+                        </div>
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style='page-break-before: always;'></div>
+{{else}}
+    <p>No content</p>
+{{/each}}
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWPkWB0i_JVHlJPItjCqkzg44j8ieBSV0&libraries=places" type="text/javascript"></script>
+<script>
+    {#asset jquery-3.2.1.min.js @encoding=utf8}
+    {#asset highcharts.js @encoding=utf8}
+    {#asset gmaps.js @encoding=utf8}
+    {#asset accounting.min.js @encoding=utf8}
+
+    function toJSON(data) {
+        return JSON.stringify(data);
+    }
+    
+    var data = {{{toJSON data}}}
+    var surveys = data.allSurveys
+    
+    //GOOGLE MAP
+    for(var i=0; i < surveys.length; i++){
+        var url = ''
+        url = GMaps.staticMapURL({
+            lat: surveys[i].gps_fixed[0],
+            lng: surveys[i].gps_fixed[1],
+            zoom: 7,
+            markers: [
+                {lat: surveys[i].gps_fixed[0],lng: surveys[i].gps_fixed[1]}
+            ]
+        })
+        $('#'+surveys[i]._id+'_map').attr('src',url)
+    }
+    //FUNDING GRAPH
+    for(var i=0; i < data.length; i++) {
+        var seriesArr = []
+        var total = 0
+        var series = {
+            animation: false,
+            colorByPoint: true,
+            data:[]
+        }
+        if(data[i].financial_viability.funding.monetary_sources[0] === undefined){
+            
+        }else{
+            for(var j=0; j < data[i].financial_viability.funding.monetary_sources[0].sources.length; j++){
+                series.data.push({
+                    name: data[i].financial_viability.funding.monetary_sources[0].sources[j].source_type,
+                    y: data[i].financial_viability.funding.monetary_sources[0].sources[j].rand_amount
+                })
+            }
+        }
+
+        seriesArr.push(series)
+        for(var k=0;k<series.data.length;k++){
+            total += series.data[k].y
+        }
+        Highcharts.chart(data[i]._id+'_fund', {
+            chart: {
+                type: 'pie',
+                backgroundColor:'rgba(255, 255, 255, 0.0)' 
+            },
+            title: {
+                text: 'Total: '+accounting.formatMoney(total, 'R ',2,',','.')
+            },
+            plotOptions: {
+                pie: {
+                    dataLabels: {
+                        enabled: true,
+                        formatter: function () {
+                            //return accounting.this.y
+                            return accounting.formatMoney(this.y, 'R ',2,',','.')
+                        },
+                        distance: -30
+                    },
+                    showInLegend: true                    
+                }
+            },
+            series: seriesArr
+        })
+    }
+    //STAFF SKILL GRAPH
+     for(var i=0; i < data.length; i++) {
+        var cat = []
+        var series = [
+            {
+                name: 'With Post Graduate Degree',
+                data: []
+            },
+            {
+                name: 'With Degree',
+                data: []
+            },
+            {
+                name: 'With Tertiary Qualification',
+                data: []
+            },
+            {
+                name: 'With Matric',
+                data: []
+            },
+            {
+                name: 'Other',
+                data: []
+            }
+        ]
+        
+        var sse = data[i].organisational_capacity_and_resources.level_of_staff_skill
+        for (var k=0; k < sse.length; k++) {
+            cat.push(sse[k].staff_status)
+            series[0].data.push(sse[k].with_post_graduate_degree)
+            series[1].data.push(sse[k].with_degree)
+            series[2].data.push(sse[k].with_tertiary_qualification)
+            series[3].data.push(sse[k].with_matric)
+            series[4].data.push(sse[k].total - (
+                sse[k].with_post_graduate_degree+
+                sse[k].with_degree+
+                sse[k].with_tertiary_qualification+
+                sse[k].with_matric
+            ))
+        }
+        cat.push('Other')
+        
+        Highcharts.chart(data[i]._id+'_sse', {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: null
+            },
+            xAxis: {
+                categories: cat
+            },
+            yAxis: {
+                allowDecimals:false,
+                min: 0,
+                title: {
+                    text: 'Number of Staff'
+                }
+            },
+            legend: {
+                reversed: true
+            },
+            plotOptions: {
+                series: {
+                    stacking: 'normal'
+                }
+            },
+            series: series
+        })
+
+     }
+</script>
+

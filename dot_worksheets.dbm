@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.8.2-beta1" last-position="0,122" last-zoom="1"
+	 default-schema="public" default-owner="postgres">
+<database name="new_database">
+</database>
+
+<schema name="public" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<table name="worksheeets">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="87" y="160"/>
+	<column name="job_ref_no" not-null="true">
+		<type name="serial"/>
+	</column>
+	<column name="captured_by" not-null="true">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="captured_on" not-null="true">
+		<type name="timestamp"/>
+	</column>
+	<column name="rank_job_title" not-null="true">
+		<type name="public.rank_job_title_enum"/>
+	</column>
+	<column name="section" not-null="true">
+		<type name="public.section_enum"/>
+	</column>
+	<column name="tes_method" not-null="true">
+		<type name="public.test_method_enum"/>
+	</column>
+	<column name="new_test" not-null="true">
+		<type name="boolean"/>
+	</column>
+	<column name="priority" not-null="true">
+		<type name="public.priority_enum"/>
+	</column>
+	<column name="division" not-null="true">
+		<type name="public.division_enum"/>
+	</column>
+	<column name="consultant_name" not-null="true">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="sample_requester" not-null="true">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="region" not-null="true">
+		<type name="public.region_enum"/>
+	</column>
+	<column name="road_number" not-null="true">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="entry_date" not-null="true">
+		<type name="timestamp"/>
+	</column>
+	<column name="environmental_condition">
+		<type name="public.environmental_condition_enum"/>
+	</column>
+	<column name="do_you_want_to_witness_the_test_procedure">
+		<type name="boolean"/>
+	</column>
+	<column name="interim_report">
+		<type name="boolean"/>
+	</column>
+	<column name="customer_agreement_on_test_method">
+		<type name="boolean"/>
+	</column>
+	<column name="capability_to_peform_test">
+		<type name="boolean"/>
+	</column>
+	<column name="resources">
+		<type name="boolean"/>
+	</column>
+	<column name="sample_condition">
+		<type name="public.sample_condition"/>
+	</column>
+	<column name="purpose_of_test">
+		<type name="text"/>
+	</column>
+	<column name="remarks_comments">
+		<type name="text"/>
+	</column>
+	<column name="sample_submitted_by" not-null="true">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="time_sampled">
+		<type name="timestamp"/>
+	</column>
+	<column name="time_received">
+		<type name="timestamp"/>
+	</column>
+	<column name="special_packagin">
+		<type name="boolean"/>
+	</column>
+	<column name="comments">
+		<type name="text"/>
+	</column>
+	<column name="requisition_received_by">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="requisition_date_received">
+		<type name="timestamp"/>
+	</column>
+	<column name="requisition_registered_by">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="requisition_date_registered">
+		<type name="timestamp"/>
+	</column>
+	<column name="requisition_for_testing_received_by">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="requisition_for_testing_date_received_by">
+		<type name="timestamp" length="255"/>
+	</column>
+	<column name="requisition_controlled_by">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="requisition_controlled_date">
+		<type name="timestamp"/>
+	</column>
+	<column name="results_received_by">
+		<type name="character varying" length="255"/>
+	</column>
+	<column name="completion_date">
+		<type name="timestamp"/>
+	</column>
+	<column name="date_needed">
+		<type name="timestamp"/>
+	</column>
+	<column name="test_duration">
+		<type name="integer"/>
+	</column>
+	<column name="findings">
+		<type name="public.findings_enum"/>
+	</column>
+	<column name="remarks" default-value="'None'">
+		<type name="text"/>
+	</column>
+	<column name="are_you_registered">
+		<type name="boolean"/>
+	</column>
+	<column name="registration_start_date">
+		<type name="timestamp"/>
+	</column>
+	<column name="registration_end_date">
+		<type name="timestamp"/>
+	</column>
+	<column name="is_your_registration_still_active">
+		<type name="boolean"/>
+	</column>
+	<column name="result_delivery_method">
+		<type name="public.results_delivery_method_enum"/>
+	</column>
+	<constraint name="worksheet_pkey" type="pk-constr" table="public.worksheeets">
+		<columns names="job_ref_no" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<usertype name="rank_job_title_enum" configuration="enumeration">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<enumeration values="Chief Auxiliary,Technician,Registration,Lab Manager"/>
+</usertype>
+
+<usertype name="section_enum" configuration="enumeration">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<enumeration values="Asphalt,Aggregate,Soil,Bitumen"/>
+</usertype>
+
+<usertype name="test_method_enum" configuration="enumeration">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<enumeration values="TMH1,SANS-3001"/>
+</usertype>
+
+<usertype name="priority_enum" configuration="enumeration">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<enumeration values="Normal,Urgent,Preference"/>
+</usertype>
+
+<usertype name="division_enum" configuration="enumeration">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<enumeration values="Maintenance,Special Projects,Construction,Projects"/>
+</usertype>
+
+<usertype name="region_enum" configuration="enumeration">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<enumeration values="To Be Provided"/>
+</usertype>
+
+<usertype name="pavement_layer_enum" configuration="enumeration">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<enumeration values="Surfacing,Base,Upper Sub-Base,Lower Sub-Base,Upper Selected,Lower Selected,Fill and Road Bed"/>
+</usertype>
+
+<usertype name="environmental_condition_enum" configuration="enumeration">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<enumeration values="Hot,Windy,Wet Rain"/>
+</usertype>
+
+<usertype name="sampling_method" configuration="enumeration">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<enumeration values="Colto,TGI,TMH1,TMH5,SANS-3001,Other"/>
+</usertype>
+
+<usertype name="sample_condition" configuration="enumeration">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<enumeration values="Slighty Moist,Moist,Dry"/>
+</usertype>
+
+<usertype name="findings_enum" configuration="enumeration">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<enumeration values="Material within Specification"/>
+</usertype>
+
+<usertype name="results_delivery_method_enum" configuration="enumeration">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<enumeration values="Emailed,Collected,Hand Delivered"/>
+</usertype>
+
+</dbmodel>

@@ -1,0 +1,23 @@
+{
+  "name": "ex_ldap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.7.1",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.0.1",
+    "ldapauth-fork": "^2.5.2",
+    "multer": "^1.1.0",
+    "passport": "^0.3.2",
+    "passport-ldapauth": "^0.5.0",
+    "request": "^2.72.0"
+  }
+}

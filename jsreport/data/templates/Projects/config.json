@@ -1,0 +1,16 @@
+{
+    "shortid": "rkXGCus2W",
+    "recipe": "phantom-pdf",
+    "engine": "handlebars",
+    "modificationDate": {
+        "$$date": 1507793929179
+    },
+    "_id": "Jzzm3jsE6xSXefn3",
+    "data": {
+        "shortid": "rkC26_inb"
+    },
+    "phantom": {
+        "margin": "",
+        "fitToPage": true
+    }
+}

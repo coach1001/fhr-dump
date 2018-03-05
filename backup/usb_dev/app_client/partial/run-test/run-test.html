@@ -1,0 +1,155 @@
+<div class="container-fluid">
+  <div class="row bottom-buffer">
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-6">
+          <button class="btn btn-lg btn-block btn-primary disabled">Curr. Force</button>
+        </div>
+        <div class="col-md-6">
+          <button class="btn btn-lg btn-block btn-primary disabled">Max. Force</button>
+        </div>
+      </div>
+      <div class="row top-buffer">
+        <div class="col-md-6"><a class="btn btn-block btn-lg btn-default disabled">0.00 kN</a></div>
+        <div class="col-md-6"><a class="btn btn-block btn-lg btn-default disabled">0.00 kN</a></div>
+      </div>
+      <div class="row top-buffer">
+        <div class="col-md-6">
+          <button class="btn btn-lg btn-block btn-primary disabled">Curr. Disp.</button>
+        </div>
+        <div class="col-md-6">
+          <button class="btn btn-lg btn-block btn-primary disabled">Max. Disp.</button>
+        </div>
+      </div>
+      <div class="row top-buffer">
+        <div class="col-md-6"><a class="btn btn-block btn-lg btn-default disabled">0.00 mm</a></div>
+        <div class="col-md-6"><a class="btn btn-block btn-lg btn-default disabled">0.00 mm</a></div>
+      </div>
+      <div class="row top-buffer">
+        <div class="col-md-6">
+          <button class="btn btn-lg btn-block btn-primary disabled">Curr. Stress</button>
+        </div>
+        <div class="col-md-6">
+          <button class="btn btn-lg btn-block btn-primary disabled">Max. Stress</button>
+        </div>
+      </div>
+      <div class="row top-buffer">
+        <div class="col-md-6"><a class="btn btn-block btn-lg btn-default disabled">0.00 MPa</a></div>
+        <div class="col-md-6"><a class="btn btn-block btn-lg btn-default disabled">0.00 MPa</a></div>
+      </div>
+      <div class="row top-buffer right-buffer">
+        <div class="col-md-12" style="height:28vh;overflow-y: scroll;">
+          <table class="table table-bordered">
+            <thead ">
+              <tr>
+                <th>#</th>
+                <th>Time</th>
+                <th>Force</th>
+                <th>Disp.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">1</th>
+                <td>0.00 secs</td>
+                <td>0.00 kN</td>
+                <td>0.00 mm</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>0.00 secs</td>
+                <td>0.00 kN</td>
+                <td>0.00 mm</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>0.00 secs</td>
+                <td>0.00 kN</td>
+                <td>0.00 mm</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>0.00 secs</td>
+                <td>0.00 kN</td>
+                <td>0.00 mm</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>0.00 secs</td>
+                <td>0.00 kN</td>
+                <td>0.00 mm</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>0.00 secs</td>
+                <td>0.00 kN</td>
+                <td>0.00 mm</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>0.00 secs</td>
+                <td>0.00 kN</td>
+                <td>0.00 mm</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>0.00 secs</td>
+                <td>0.00 kN</td>
+                <td>0.00 mm</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>0.00 secs</td>
+                <td>0.00 kN</td>
+                <td>0.00 mm</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>0.00 secs</td>
+                <td>0.00 kN</td>
+                <td>0.00 mm</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>0.00 secs</td>
+                <td>0.00 kN</td>
+                <td>0.00 mm</td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>0.00 secs</td>
+                <td>0.00 kN</td>
+                <td>0.00 mm</td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td>0.00 secs</td>
+                <td>0.00 kN</td>
+                <td>0.00 mm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 graph-border" align="center">
+      <plotly plotly-data="vm.data" plotly-layout="vm.layout" plotly-options="vm.options"></plotly>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-5">
+      <div class="eighth-height">
+        <a class="btn btn-block btn-primary option-button-sm">
+          <span class="glyphicon btn-glyphicon-sm glyphicon-exclamation-sign img-circle text-primary pull-left"></span>Stop Test
+        </a>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="eighth-height">
+        <a class="btn btn-block btn-default option-button-sm disabled">
+          <span class="glyphicon btn-glyphicon-sm glyphicon-time img-circle text-primary pull-left"></span>{{vm.elapsedTimeMs | stopwatchTime }}
+        </a>
+      </div>
+    </div>
+  </div>
+  </div
